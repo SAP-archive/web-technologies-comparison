@@ -1,0 +1,41 @@
+{
+	"newTodo": {
+		"text": "",
+		"deadline": "",
+		"done": false
+	},
+	"todos": [
+		{
+			"text": "Attend TechEd Global",
+			"id": 1,
+			"deadline": "8/12/2020",
+			"done": false
+		},
+		{
+			"text": "Do some magic",
+			"id": 2,
+			"deadline": "24/9/2020",
+			"done": false
+		},
+		{
+			"text": "Go to the gym",
+			"id": 3,
+			"deadline": "24/7/2020",
+			"done": true
+		},
+		{
+			"text": "Learn about React",
+			"id": 4,
+			"deadline": "30/8/2020",
+			"done": true
+		},
+		{
+			"text": "Learn about Fundamentals Library and UI5 Web Components",
+			"id": 5,
+			"deadline": "29/12/2020",
+			"done": false
+		}
+	],
+	"itemsRemovable": true,
+	"completedCount": 1
+}

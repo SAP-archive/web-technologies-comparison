@@ -1,0 +1,14 @@
+{
+	"name": "sapui5-sample-app",
+	"version": "1.0.0",
+  "license": "Apache-2.0",
+	"dependencies": {},
+	"devDependencies": {
+		"@ui5/cli": "^2.6.1"
+	},
+	"scripts": {
+		"start": "ui5 serve",
+		"build": "ui5 build -a --clean-dest",
+		"build-self-contained": "ui5 build self-contained -a --clean-dest"
+	}
+}

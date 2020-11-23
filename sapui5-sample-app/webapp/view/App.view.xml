@@ -1,0 +1,68 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:f="sap.f" 
+	controllerName="sap.ui.demo.todo.controller.App" displayBlock="true">
+	<App>
+		<Page >
+			<customHeader>
+				<f:ShellBar title="{i18n>TITLE}" homeIcon="./img/logo_ui5.png" />
+			</customHeader>
+			<content>
+				<HBox class="create-todo-wrapper">
+					<Input class="todoInput" id="addTodoItemInput" value="{/newTodo/text}" placeholder="{i18n>INPUT_PLACEHOLDER}" submit=".addTodo" />
+					<DatePicker id="datepicker" valueFormat="dd/MM/yyyy" displayFormat="dd/MM/yyyy" value="{/newTodo/deadline}" />
+					<Button type="Emphasized" text="{i18n>BUTTON}" press=".addTodo"></Button>
+				</HBox>
+				<List id="todoList" backgroundDesign="Transparent"  mode="MultiSelect"  showNoData="false" items="{ path:'/todos' }">
+					<CustomListItem visible="{= !${done} }" selected="{done}" >
+						<HBox>
+							<VBox justifyContent="Center">
+								<Text text="{text} - finish before: {deadline}"/>
+							</VBox>
+							<Button class="editButton" text="{i18n>EDIT}" press=".onEditTodo"/>
+							<Button type="Reject" text="{i18n>DELETE}" press=".onDeleteTodo" />
+						</HBox>
+					</CustomListItem>
+				</List>
+				<Panel expandable="true" expanded="true" width="auto">
+					<headerToolbar>
+						<OverflowToolbar style="Clear">
+							<Title text="{i18n>COMPLETED}" />
+						</OverflowToolbar>
+					</headerToolbar>
+					<content>
+						<List id="doneList" mode="MultiSelect" backgroundDesign="Transparent" items="{/todos}">
+							<CustomListItem visible="{done}" selected="{done}">
+								<HBox>
+									<VBox justifyContent="Center">
+										<Text text="{text} - finish before: {deadline}"/>
+									</VBox>
+									<Button class="editButton" text="{i18n>EDIT}" press=".onEditTodo"/>
+									<Button type="Reject" text="{i18n>DELETE}" press=".onDeleteTodo" />
+								</HBox>
+							</CustomListItem>
+						</List>
+					</content>
+				</Panel>
+			</content>
+
+			<dependents>
+				<Dialog id="editDialog" title="{i18n>EDIT_TODO}" contentWidth="400px">
+					<content >
+						<VBox>
+							<Label text="{i18n>TODO_TITLE}" labelFor="input-title" />
+							<TextArea width="100%" id="input-title" value="{/edit/text}"/>
+							<Label text="{i18n>TODO_DATE}" labelFor="input-date" />
+							<DatePicker id="input-date" valueFormat="dd/MM/yyyy" displayFormat="dd/MM/yyyy" value="{/edit/deadline}" />
+						</VBox>
+					</content>
+					<buttons >
+						<Button text="{i18n>CANCEL}" press=".onClose"/>
+						<Button type="Emphasized" text="{i18n>SAVE}" press=".onSave"/>
+					</buttons>
+				</Dialog>
+			</dependents>
+
+		</Page>
+	</App>
+</mvc:View>

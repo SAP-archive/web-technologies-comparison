@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: '72', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "72";
+  src: url("72-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SAP-icons";
+  src: url("SAP-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
