@@ -58,11 +58,11 @@ yarn install #alternative: npm install
 # The Technologies
 
 ## SAPUI5 Sample App
-SAPUI5 and its [open-sourced](https://github.com/SAP/openui5) sibling, OpenUI5, are probably the most common web technologies in this comparison. Both are commonly referred to as UI5 and let you build enterprise-ready web applications, responsive to all devices, running on almost any browser of your choice. It's based on JavaScript, using jQuery as its foundation, and follows web standards. It eases your development with a client-side HTML5 rendering library, including a rich set of controls and supports data binding to different data models (JSON, XML, and OData). 
+SAPUI5 and its [open-sourced](https://github.com/SAP/openui5) sibling, OpenUI5, are probably the best knows web technologies in this comparison. Both are commonly referred to as “UI5” and let you build enterprise-ready web applications responsive to all devices, running on almost any browser of your choice. They are based on JavaScript, using jQuery as their foundation, and follow web standards. They ease your development with a client-side HTML5 rendering library, including a rich set of controls, and support data binding to different data models (JSON, XML, and OData).
 ![SAPUI5](./SAPUI5.png)
 
 ## UI5 Web Components for React Sample App
-This sample app leverages the [UI5 Web Components](https://sap.github.io/ui5-webcomponents/), which provide a set of [web components](https://www.webcomponents.org/) that share many methods and properties with well-known SAPUI5 controls. UI5 Web Components are neither built on top of UI5, but rather lightweight and independent UI elements nor are they a successor of UI5, but rather a complementary offering. These web components can be used natively or in combination with any non-SAP web development framework such as [Angular](https://angular.io/), [React](https://reactjs.org/), and [Vue.js](https://vuejs.org/). 
+This sample app leverages the [UI5 Web Components](https://sap.github.io/ui5-webcomponents/), which provide a set of [web components](https://www.webcomponents.org/) that share many methods and properties with well-known SAPUI5 controls. These will help SAPUI5 developers to find their way when getting started with this new technology. UI5 Web Components are neither built on top of UI5, but rather light-weight and independent UI elements nor are they a successor of UI5, but rather a complementary offering. These web components can be used natively or in combination with any web development framework such as [Angular](https://angular.io/), [React](https://reactjs.org/), and [Vue.js](https://vuejs.org/). 
 
 For React, there is even a separate wrapper implementation around UI5 Web Components, making them even more comfortable. This sample application has been implemented with the [UI5 Web Components for React](https://github.com/SAP/ui5-webcomponents-react).
 
@@ -83,21 +83,22 @@ The following table shows a comparison between the mentioned web technologies. F
 
 |                                        | Fundamental Library Styles | UI5 Web Components | SAPUI5/OpenUI5   |
 | -------------------------------------- | -------------------------- | ------------------ | -------- |
-| Runtime size of sample app¹             | ≈1.9MB                     | ≈1.4MB             | ≈7.6MB   |
-| Performance of sample app²              | 96                         | 98                 | 67       |
+| Runtime size of sample app¹             | ≈1.6MB                     | ≈0.9MB             | ≈7.6MB   |
+| Performance of sample app²              | 99                         | 100                 | 67       |
 | Flexibility                            | Very high                  | High               | Moderate |
 | Open standards                         | High                       | Very high          | Moderate |
 | Available controls                     | 100+                       | 80+                | 650+     |
 | Vendors                                | \>2                        | \>2                | 1        |
 | Compatibility with SAP Fiori launchpad | Decoupled `<iframe>`               | Decoupled `<iframe>`       | Integrated `<iframe>`     |
-| Maturity                               | v0.13.0-rc.21              | V1.0.0-rc.9        | v1.81.0  |
+| Maturity                               | v0.13.0             | v0.27.0       | v1.84.1  |
 | Themeable                              | ✅                          | ✅                  | ✅        |
 | SAP Fiori compliant                    | ✅                          | ✅                  | ✅        |
-As of September 2020
-  
-¹ Measured with the [network inspector](https://developers.google.com/web/tools/chrome-devtools/network) of the Google Chrome Dev Tools
 
-² According to the Google Chrome [Lighthouse report](https://developers.google.com/web/tools/lighthouse)
+> As of December 2020
+>
+> ¹ Measured with the [network inspector](https://developers.google.com/web/tools/chrome-devtools/network) of the Google Chrome Dev Tools
+>
+> ² According to the Google Chrome [Lighthouse report](https://developers.google.com/web/tools/lighthouse)
 
 # Limitations
 The project contains standalone web apps. Deployment configuration files for any platform, such as SAP Cloud Platform, are not in the scope of this repository.
