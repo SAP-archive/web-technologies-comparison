@@ -5,11 +5,11 @@ This repository serves the purpose of understanding the fundamental differences 
 - [UI5 Web Components for React](https://sap.github.io/ui5-webcomponents-react/)
 - [Fundamental React](https://sap.github.io/fundamental-react/)
 
-There is also a [TechEd Online 2020](http://www.sapteched.com/), which highlights the differences and similarities of these technologies. You can find the [full session IIS114](INSERT) and all other videos on the INSERT website. 
+There is also a [TechEd Online 2020](http://www.sapteched.com/), which highlights the differences and similarities of these technologies. You can find the [full session IIS114](https://events.sapteched.com/widget/sap/sapteched2020/Catalog?search=iis114) and all other videos on the SAP Teched website. 
 
 ![screenshot](./screenshot.png)
 
-The screenshot shows the rendered web apps. All of them are Fiori 3-compliant to look almost identical. Under the hood, in the DOM tree, you can see that the various technologies' rendering behavior is very different.
+The screenshot shows the rendered web apps. All of them are Fiori 3-compliant to look almost identical. In the DOM tree, you can see that the various technologies' rendering behavior is very different.
 
 
 # Requirements
@@ -45,7 +45,7 @@ yarn install #alternative: npm install
 1. Pick the web app you want to run in development mode.
     ```
     cd sapui5-sample-app/
-    # or: cd fundmentals-lib-react-sample-app/
+    # or: cd fundamentals-lib-react-sample-app/
     # or: cd ui5-webcomponents-for-react-sample-app/
     ```
 2. Run the start script.
@@ -79,7 +79,7 @@ This sample application has been implemented with the [Fundamental React](https:
 
 ## Comparision 
 
-The following table shows a comparison between the mentioned web technologies. For a further explanation, please check out this blog post or the associate  [TechEd Online session IIS114](INSERT).
+The following table shows a comparison between the mentioned web technologies. For a further explanation, please check out [this blog post](https://blogs.sap.com/2020/12/02/beyond-sapui5-and-sap-fiori-elements-appendix-to-teched-session-iis114/) or the associated  [TechEd Online session IIS114](https://events.sapteched.com/widget/sap/sapteched2020/Catalog?search=iis114).
 
 |                                        | Fundamental Library Styles | UI5 Web Components | SAPUI5/OpenUI5   |
 | -------------------------------------- | -------------------------- | ------------------ | -------- |
