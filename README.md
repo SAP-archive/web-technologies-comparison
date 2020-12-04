@@ -1,5 +1,7 @@
 # Comparison of Multiple Web Technologies by SAP
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/web-technologies-comparison)](https://api.reuse.software/info/github.com/SAP-samples/web-technologies-comparison)
+
 This repository serves the purpose of understanding the fundamental differences of various web technologies from SAP. To illustrate these differences, we built three (almost identical) To-Do list sample applications with the following technologies:
 - [SAPUI5](https://sapui5.hana.ondemand.com/) / [OpenUI5](https://openui5.hana.ondemand.com/) 
 - [UI5 Web Components for React](https://sap.github.io/ui5-webcomponents-react/)
