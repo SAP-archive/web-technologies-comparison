@@ -26,7 +26,7 @@ sap.ui.define([
 			oNew.id = aTodos.length + 1;
 
 			oModel.setProperty("/todos", [...aTodos, oNew]);
-			oModel.setProperty("/newTodo", "");
+			oModel.setProperty("/newTodo", {});
 		},
 
 		onEditTodo: function (oEvent) {
