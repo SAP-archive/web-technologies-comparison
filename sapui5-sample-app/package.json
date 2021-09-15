@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
 	"dependencies": {},
 	"devDependencies": {
-		"@ui5/cli": "^2.10.0"
+		"@ui5/cli": "^2.12.1"
 	},
 	"scripts": {
 		"start": "ui5 serve",

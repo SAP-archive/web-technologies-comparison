@@ -1,10 +1,10 @@
-specVersion: "2.0"
+specVersion: "2.5"
 metadata:
   name: sapui5-sample-app
 type: application
 framework:
   name: SAPUI5
-  version: "1.81.0"
+  version: 1.93.0
   libraries:
     - name: sap.f
     - name: sap.m
